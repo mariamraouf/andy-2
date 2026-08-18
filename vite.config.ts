@@ -4,8 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(() => ({
-  // Replace '/REPO-NAME/' with your actual GitHub repository name (e.g., '/my-cruzian-site/'), or use './'
-  base: process.env.BASE_URL || "./",
+  base: process.env.BASE_URL || "/andy-2/",
   server: {
     host: "::",
     port: 8080,

@@ -4,16 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(() => ({
-  // Set to your GitHub repository name (e.g. '/my-repo/') or override via BASE_URL env var
-  base: process.env.BASE_URL ||<dyad-write path="vite.config.ts" description="Set base path for GitHub Pages in Vite configuration">
-import { defineConfig } from "vite";
-import dyadComponentTagger from "@dyad-sh/react-vite-component-tagger";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-
-export default defineConfig(() => ({
-  // Set to your GitHub repository name (e.g. '/my-repo/') or override via BASE_URL env var
-  base: process.env.BASE_URL || "/REPO-NAME/",
+  // Replace '/REPO-NAME/' with your actual GitHub repository name (e.g., '/my-cruzian-site/'), or use './'
+  base: process.env.BASE_URL || "./",
   server: {
     host: "::",
     port: 8080,
